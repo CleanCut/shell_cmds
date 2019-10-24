@@ -1,7 +1,7 @@
 Rust port of Apple's [shell_cmds](https://opensource.apple.com/source/shell_cmds/shell_cmds-198/)
 =================================
 
-Port Apple's shell commands from C to Rust.
+Port Apple's shell commands from C to Rust.  Mostly just for the fun of it.
 
 Contributing
 ============
@@ -82,7 +82,9 @@ Porting Status
 Bugs in Original
 ================
 
-Below is a partial list of bugs discovered in C code of Apple's [shell_cmds version 198](https://opensource.apple.com/source/shell_cmds/shell_cmds-198/) -- which ships on macOS Sierra.
+Below is a partial list of bugs discovered in C code of Apple's [shell_cmds] which ship on macOS.
+
+[shell_cmds]: https://opensource.apple.com/source/shell_cmds/shell_cmds-198/
 
 chroot.c
 --------

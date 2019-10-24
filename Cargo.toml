@@ -2,8 +2,9 @@
 name = "shell_cmds"
 version = "0.1.0"
 authors = ["Nathan Stocks <nathan@agileperception.com>"]
+edition = "2018"
 
 [dependencies]
-clap = "2.20.5"
-libc = "0.2"
-getopts = "0.2"
+clap = "2.33.0"
+libc = "0.2.65"
+getopts = "0.2.21"

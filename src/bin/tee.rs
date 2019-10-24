@@ -74,7 +74,7 @@ fn main() {
     }
 
     // Open each of the files and push them on a vector
-    let mut filehandles : Vec<Box<Write>> = Vec::new();
+    let mut filehandles : Vec<Box<dyn Write>> = Vec::new();
     filehandles.push(Box::new(std::io::stdout()));
     let mut filenames = matches.free.clone();
     for filename in &filenames {
@@ -110,7 +110,7 @@ fn main() {
         }
         // Write
         let buffer_out = buffer_in.clone();
-        for (filename, mut filehandle) in filenames.iter().zip(&mut filehandles) {
+        for (filename, filehandle) in filenames.iter().zip(&mut filehandles) {
             match filehandle.write(&buffer_out[..num_bytes]) {
                 Ok(bytes_written) => {
                     if bytes_written != num_bytes {

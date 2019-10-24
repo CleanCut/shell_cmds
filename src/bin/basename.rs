@@ -38,7 +38,7 @@ fn basename<'a>(input: &'a str, suffix: &str) -> &'a str {
     // Trim surrounding whitespace
     let mut result = input.trim();
     // Remove any trailing slashes from the right side
-    result = result.trim_right_matches('/');
+    result = result.trim_end_matches('/');
     // Remove everything up to the last forward slash, if there is one
     if let Some(index) = result.rfind('/') {
         result = &result[index+1..];
