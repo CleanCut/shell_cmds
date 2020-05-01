@@ -1,13 +1,14 @@
 Rust port of Apple's [shell_cmds](https://opensource.apple.com/source/shell_cmds/shell_cmds-198/)
 =================================
 
-Port Apple's shell commands from C to Rust.  Mostly just for the fun of it.
+Port Apple's shell commands from C to Rust.  To learn more about ancient shell commands and Rust, and to have fun.
 
 Contributing
 ============
 
--  Want to help? Jump right in! If you would rather talk first then contact me by
-   [creating an issue](https://github.com/agileperception/shell_cmds/issues/new)
+-  Want to help? Please do! The easiest way to contact me to discuss things is by
+   [creating an issue](https://github.com/agileperception/shell_cmds/issues/new) or
+   [pull request](https://github.com/CleanCut/shell_cmds/pulls)
 
 - Code to port: [shell_cmds version 198](https://opensource.apple.com/source/shell_cmds/shell_cmds-198/)
 
